@@ -50,7 +50,7 @@
     "robotsSwitcher": false,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "favicon": false,
-    "mbrsiteDomain": "dltuoj4ttx",
+    "mbrsiteDomain": "umnxd370r4",
     "usedWebp": false,
     "cookiesAlert": false,
     "gdpr": false,
@@ -59,7 +59,8 @@
     "dppsSwitcher": true,
     "spellingSwitch": true,
     "site_lang": "en",
-    "global_header_custom": "\n<script src=\"./dist/bundle.js\"></script>\n<script src=\"src/index.js\"></script>\n<script src=\"src/airtable.cjs\" type=\"module\"></script>\n"
+    "global_header_custom": "  <script src=\"./index.js\"></script>",
+    "global_footer_custom": "\n<script>\n  // Add click event listener to gallery images\n  const galleryImages = document.querySelectorAll('.gallery-image img');\n  galleryImages.forEach((image, index) => {\n    image.addEventListener('click', () => {\n      const imagePath = image.getAttribute('src');\n      // Send the imagePath to the main process to set the wallpaper\n      window.api.send('set-wallpaper', imagePath);\n    });\n  });\n</script>\n"
   },
   "pages": {
     "index.html": {

@@ -14,7 +14,7 @@
   "author": "joelondesign",
   "license": "ISC",
   "dependencies": {
-    "electron": "^25.0.1",
+    "electron": "^25.1.0",
     "wallpaper": "^6.1.1"
   }
 }

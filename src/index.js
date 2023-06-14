@@ -34,7 +34,8 @@ async function setWallpaper(imagePath) {
   try {
     const { setWallpaper } = await import('wallpaper');
     const directoryPath = path.join(__dirname, 'assets', 'images');
-    const fullPath = path.join(directoryPath, imagePath.replace('assets/images/', ''));
+    const imagePathWithoutPrefix = imagePath.replace('assets/images/', '');
+    const fullPath = path.join(directoryPath, imagePathWithoutPrefix);
     console.log('Full path:', fullPath); // Log the full path for troubleshooting
     await setWallpaper(fullPath);
     console.log('Wallpaper set successfully');
@@ -42,3 +43,5 @@ async function setWallpaper(imagePath) {
     console.error('Error setting wallpaper:', error);
   }
 }
+
+

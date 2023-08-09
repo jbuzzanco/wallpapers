@@ -1,1 +1,7 @@
 node_modules/
+electron-forge-project/node_modules
+electron-forge-project/electron-dock-icon-test/node_modules
+electron-forge-project/MacWallpapers-darwin-arm64/MacWallpapers.app
+electron-forge-project/MacWallpapers-darwin-arm64/MacWallpapers.app
+electron-forge-project/electron-dock-icon-test/MacWallpapers-darwin-arm64
+electron-forge-project/electron-dock-icon-test/MacWallpapers-darwin-x64

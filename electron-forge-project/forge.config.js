@@ -1,6 +1,9 @@
+const path = require('path');
+
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: path.join(__dirname, 'src', 'icons', 'mac', 'testflight.icns'),
   },
   rebuildConfig: {},
   makers: [

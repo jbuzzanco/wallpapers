@@ -4,12 +4,7 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
-  "icon": "src/icons/mac/testflight.icns",
-  "build": {
-    "mac": {
-      "icon": "src/icons/mac/testflight.icns"
-    }
-  },
+  "icon": "src/icons/mac/eye-icon.icns",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",

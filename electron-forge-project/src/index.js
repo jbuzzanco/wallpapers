@@ -14,7 +14,7 @@ function createWindow() {
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
   // Set the dock icon
-  const iconPath = path.join(__dirname, 'assets', "icons", "mac", 'gaming-05.png');
+  const iconPath = path.join(__dirname, 'assets', "icons", "mac", 'icon-overlyvisual.icns');
   const icon = nativeImage.createFromPath(iconPath);
   app.dock.setIcon(icon);
 }

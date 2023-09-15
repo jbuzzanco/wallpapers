@@ -14,10 +14,6 @@ function createWindow() {
   const indexPath = path.join(__dirname, 'index.html');
   mainWindow.loadURL(`file://${indexPath}`);
 
-  // Set the dock icon
-  const iconPath = path.join(__dirname, 'assets', 'gaming-05.png');
-  const icon = nativeImage.createFromPath(iconPath);
-  app.dock.setIcon(icon);
 }
 
 app.whenReady().then(() => {

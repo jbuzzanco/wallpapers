@@ -5,6 +5,11 @@ module.exports = {
     asar: true,
     icon: path.join(__dirname, 'src', 'icons', 'mac', 'testflight.icns'),
   },
+  "electronPackagerConfig": {
+    "osxSign": {
+      "identity": "Developer ID Application: Joelondesign Dev Key",
+    }
+  },
   rebuildConfig: {},
   makers: [
     {

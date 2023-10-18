@@ -16,6 +16,7 @@
   "author": "joel",
   "license": "MIT",
   "dependencies": {
+    "electron-forge": "^5.2.4",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {

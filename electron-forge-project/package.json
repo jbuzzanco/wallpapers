@@ -2,7 +2,7 @@
   "name": "electron-forge-project",
   "productName": "electron-forge-project-joel",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Wallpaper setting app for visualizations",
   "main": "src/index.js",
   "icon": "src/icons/mac/eye-icon.icns",
   "scripts": {
@@ -14,7 +14,7 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "joel",
+  "author": "JoelonDesign",
   "license": "MIT",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"

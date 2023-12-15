@@ -1,3 +1,5 @@
+.DS_Store
+
 # App file 
 electron-forge-project/Visualize-Wallpapers-darwin-arm64/
 electron-forge-project/Visualize-Wallpapers-darwin-x64/

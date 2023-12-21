@@ -1,0 +1,64 @@
+{
+    "name": "overlyvisual-wallpapers",
+    "productName": "Overlyvisual Wallpapers App",
+    "version": "1.0.0",
+    "description": "Wallpaper setting app for visualizations",
+    "main": "src/index.js",
+    "icon": "src/icons/mac/eye-icon.icns",
+    "scripts": {
+        "start": "electron-forge start",
+        "package": "electron-forge package --arch universal",
+        "make": "electron-forge make --arch universal --platform mas",
+        "sign": "electron-osx-sign MacWallpapers-darwin-x64/MacWallpapers.app",
+        "publish": "electron-forge publish",
+        "lint": "echo \"No linting configured\""
+    },
+    "keywords": [],
+    "author": "JoelonDesign",
+    "license": "MIT",
+    "dependencies": {
+        "@electron-forge/maker-pkg": "^7.2.0",
+        "electron-squirrel-startup": "^1.0.0",
+        "wallpaper": "^6.1.1"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^7.2.0",
+        "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+        "electron": "25.3.0"
+    },
+    "config": {
+        "forge": {
+            "packagerConfig": {
+                "appBundleId": "com.joelondesign.wallpapers",
+                "platform": "mas",
+                "icon": "src/icons/mac/icon-overlyvisual.icns",
+                "app-category-type": "public.app-category.utilities",
+                "osxSign": {
+                    "identity": "3rd Party Mac Developer Application: Joel Buzzanco (J5HUPF6M97)",
+                    "hardened-runtime": true,
+                    "entitlements": "entitlements.plist",
+                    "entitlements-inherit": "entitlements.plist",
+                    "gatekeeper-assess": false,
+                    "provisioningProfile": "/Users/joel/web-dev/Overlyvisual_Provisioning_Profile_Mac.provisionprofile"
+                },
+                "osxUniversal": {
+                    "x64ArchFiles": "**/macos-wallpaper"
+                },
+                "overwrite": true,
+                "name": "Overlyvisual Wallpapers",
+                "executableName": "Overlyvisual Wallpapers",
+                "appVersion": "1.0.1",
+                "buildVersion": "1.0.109"
+            },
+            "makers": [
+                {
+                    "name": "@electron-forge/maker-pkg",
+                    "platform": "mas",
+                    "config": {
+                        "identity": "3rd Party Mac Developer Installer: Joel Buzzanco (J5HUPF6M97)"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "wallapaper-local-app",
+  "version": "1.0.0",
+  "description": "way to set wallpapers on mac using electron, wallpaper node packages and mobirise website images",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "wallpaper",
+    "mac"
+  ],
+  "author": "JoelonDesign",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^25.9.8",
+    "wallpaper": "^6.1.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "electron-packager": "^17.1.1"
+  }
+}

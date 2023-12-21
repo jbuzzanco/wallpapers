@@ -1,0 +1,16 @@
+{
+  "name": "electron-dock-icon-test",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager .",
+    "test": "echo \"No tests yet...\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-packager": "^17.1.1"
+  }
+}

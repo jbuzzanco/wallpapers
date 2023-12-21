@@ -1,0 +1,18 @@
+.DS_Store
+
+# App file 
+electron-forge-project/Visualize-Wallpapers-darwin-arm64/
+electron-forge-project/Visualize-Wallpapers-darwin-x64/
+node_modules/
+electron-forge-project/node_modules
+electron-forge-project/electron-dock-icon-test/node_modules
+electron-forge-project/MacWallpapers-darwin-arm64/
+electron-forge-project/MacWallpapers-darwin-x64/
+electron-forge-project/electron-dock-icon-test/MacWallpapers-darwin-arm64
+electron-forge-project/electron-dock-icon-test/MacWallpapers-darwin-x64
+# mobirise stuff
+src/assets/mobirise/.DS_Store
+src/assets/socicon/.DS_Store
+src/assets/theme/.DS_Store
+src/assets/web/.DS_Store
+src/assets/web/assets/.DS_Store

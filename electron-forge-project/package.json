@@ -39,7 +39,7 @@
                     "entitlements": "entitlements.plist",
                     "entitlements-inherit": "entitlements.plist",
                     "gatekeeper-assess": false,
-                    "provisioningProfile": "/Users/joel/web-dev/Overlyvisual_Provisioning_Profile_Mac.provisionprofile"
+                    "provisioningProfile": "/Users/joel/web-dev/Overlyvisual_Provisioning_Profile_Distribution.provisionprofile"
                 },
                 "osxUniversal": {
                     "x64ArchFiles": "**/macos-wallpaper"
@@ -47,8 +47,8 @@
                 "overwrite": true,
                 "name": "Overlyvisual Wallpapers",
                 "executableName": "Overlyvisual Wallpapers",
-                "appVersion": "1.0.12",
-                "buildVersion": "1.0.112"
+                "appVersion": "1.0.13",
+                "buildVersion": "1.0.113"
             },
             "makers": [
                 {

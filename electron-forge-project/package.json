@@ -9,7 +9,7 @@
         "start": "electron-forge start",
         "package": "electron-forge package --arch universal",
         "make": "electron-forge make --arch universal --platform mas",
-        "sign": "electron-osx-sign MacWallpapers-darwin-x64/MacWallpapers.app",
+        "sign": "electron-osx-sign MacWallpapers-darwin-x64/MacWallpapers.app --entitlements=entitlements.plist --entitlements-inherit=entitlements.plist",
         "publish": "electron-forge publish",
         "lint": "echo \"No linting configured\""
     },
@@ -17,7 +17,7 @@
     "author": "JoelonDesign",
     "license": "MIT",
     "dependencies": {
-        "@electron-forge/maker-pkg": "^7.2.0",
+        "@electron-forge/maker-pkg": "^7.6.0",
         "electron-squirrel-startup": "^1.0.0",
         "wallpaper": "^6.1.1"
     },
@@ -39,7 +39,7 @@
                     "entitlements": "entitlements.plist",
                     "entitlements-inherit": "entitlements.plist",
                     "gatekeeper-assess": false,
-                    "provisioningProfile": "/Users/joel/web-dev/Overlyvisual_Provision_Profile_Distribution.provisionprofile"
+                    "provisioningProfile": "/Users/joel/web-dev/wallpapers-3/electron-forge-project/Overlyvisual_Provisioning_Profile_Distribution.provisionprofile"
                 },
                 "osxUniversal": {
                     "x64ArchFiles": "**/macos-wallpaper"
@@ -48,7 +48,7 @@
                 "name": "Overlyvisual Wallpapers",
                 "executableName": "Overlyvisual Wallpapers",
                 "appVersion": "1.0.14",
-                "buildVersion": "1.0.115"
+                "buildVersion": "1.0.119"
             },
             "makers": [
                 {
